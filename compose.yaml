@@ -15,6 +15,6 @@ services:
       traefik.enable: "false"
 
 networks:
-  default:
+  external:
     external: true
     name: $NETWORK
