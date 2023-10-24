@@ -2,13 +2,13 @@ version: "3.8"
 
 services:
   #Это конфигурация Docker Compose для запуска музыкального бота Discord.
-  discord-music:
-    container_name: discord-music
+  discord-evobot:
+    container_name: discord-evobot
     deploy:
       restart_policy:
         condition: always
         delay: 5s
-    env_file: music.env
+    env_file: evobot.env
     image: eritislami/evobot:latest
     labels:
       com.centurylinklabs.watchtower.enable: "true"
